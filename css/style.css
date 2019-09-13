@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body {
+  background-color: #0d0208;
+}
+h1 {
+  color: #00ff41;
+  font-family: Lucida Console;
+  font-size: 1.5em;
+}
+.text {
+  margin: 16px auto;
+  text-align: center;
+  display: block;
+}
+.text .terminal {
+  text-align: left;
+  display: inline-block;
+  transition-delay: 4.5s;
+}
+
+p {
+  text-align: center;
+  color: #00ff41;
+  font-size: 1.5em;
+}
+
+.type {
+  width: 18ch;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.5em solid;
+  animation: typing 4s steps(18), caret 1s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
